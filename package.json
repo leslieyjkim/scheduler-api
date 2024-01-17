@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node ./src/index.js",
     "error": "TEST_ERROR=true node ./src/index.js",
-    "reset": "psql -U development -d scheduler_development < ./src/db/schema/create.sql && psql -U development -d scheduler_development < ./src/db/schema/development.sql"
+    "reset": "psql -U development -d scheduler_development < ./src/db/schema/create.sql && psql -U development -d scheduler_development < ./src/db/schema/development.sql",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +18,6 @@
     "express": "^4.16.4",
     "helmet": "^3.18.0",
     "pg": "^8.5.0",
-    "react-hooks-testing-library": "^0.6.0",
     "socket.io": "^2.2.0",
     "ws": "^7.0.0"
   },
